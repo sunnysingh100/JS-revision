@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg-black {
+        color: white;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <script>
+      const div = document.createElement("div");
+      console.log(div);
+      div.className = "main";
+      div.id = Math.floor(Math.random() * 10 + 1);
+      div.setAttribute("title", "generatedTitle");
+      div.style.backgroundColor = "green";
+      div.style.padding = "20px";
+      // div.innerText = "sunny";
+      const addText = document.createTextNode("sunny");
+      div.appendChild(addText);
+      document.body.appendChild(div);
+    </script>
+  </body>
+</html>
